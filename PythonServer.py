@@ -5,7 +5,8 @@ from Model.chatgui import chatbot_response
 from Model.chatgui import *
 
 
-PORT = 4242
+#PORT = 4242
+PORT = int(os.environ.get("PORT", 4242))
 
 class PythonServer(object):
     def listen(self):
