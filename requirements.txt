@@ -1,6 +1,0 @@
-zerorpc
-
-nltk 
-
-numpy 
-keras
