@@ -50,18 +50,18 @@ app.post('/predict', async function (req, res) {
 
 
 
-app.get('/', (req, res) => {
+// app.get('/', (req, res) => {
 
-    const { spawn } = require('child_process');
-    const pyProg = spawn('python', ['./hello.py']);
+//     const { spawn } = require('child_process');
+//     const pyProg = spawn('python', ['./hello.py']);
 
-    pyProg.stdout.on('data', function(data) {
+//     pyProg.stdout.on('data', function(data) {
 
-        console.log(data.toString());
-        res.write(data);
-        res.end('end');
-    });
-})
+//         console.log(data.toString());
+//         res.write(data);
+//         res.end('end');
+//     });
+// })
 // console.log(process.env.PORT);
 const port=process.env.PORT||4000;
 app.listen(port, () => console.log('Application listening on port 4000!'))
