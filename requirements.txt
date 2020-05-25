@@ -1,0 +1,9 @@
+zerorpc
+
+nltk 
+json
+pickle
+
+numpy 
+random
+keras
