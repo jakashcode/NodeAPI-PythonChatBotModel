@@ -1,13 +1,13 @@
 const spawn = require('child_process').spawn;
 const path = require('path');
 const zerorpc = require('zerorpc');
-console.log('zeropc 1 is: '+ zerorpc);
+//console.log('zeropc 1 is: '+ zerorpc);
 
 const Utils = require('./Utils.js');
-console.log(zerorpc);
-console.log('*********************************')
+//console.log(zerorpc);
+//console.log('*********************************')
 
-const TIMEOUT = 60; // in seconds (adjust as per how long your server calls can take)
+const TIMEOUT = 600; // in seconds (adjust as per how long your server calls can take)
 const IP = '127.0.0.1';
 const PORT = '4242';
 
@@ -32,11 +32,11 @@ class PythonConnector {
 
     static async invoke(method, ...args) {
         try {
-            console.log('method is: '+ method);
+            //console.log('method is: '+ method);
             console.log('args is: '+ args);
 
             const zerorpc = PythonConnector.server();
-            console.log('zeropc 2 is: '+ zerorpc)
+            //console.log('zeropc 2 is: '+ zerorpc)
             return await Utils.promisify(zerorpc.invoke, zerorpc, method, ...args);
         }
         catch (e) {
