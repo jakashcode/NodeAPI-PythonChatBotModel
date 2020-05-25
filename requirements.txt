@@ -1,8 +1,6 @@
 zerorpc
 
 nltk 
-pickle
 
 numpy 
-random
 keras
