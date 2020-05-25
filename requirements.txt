@@ -1,7 +1,6 @@
 zerorpc
 
 nltk 
-json
 pickle
 
 numpy 
